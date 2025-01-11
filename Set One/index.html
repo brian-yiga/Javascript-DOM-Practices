@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Javascdipt DOM Manipulation</title>
+  </head>
+  <body>
+    <main>
+      <h1>JAVASCRIPT DOM PRACTICES</h1>
+      <h3>Change Text Style</h3>
+
+      <div id="selectors">
+        <label for="fontSize">Font Size:</label>
+        <select id="fontSize">
+          <option value="16px">16px</option>
+          <option value="18px">18px</option>
+          <option value="20px">20px</option>
+          <option value="24px">24px</option>
+          <option value="30px">30px</option>
+        </select>
+
+        <label for="fontColor">Font Color:</label>
+        <select id="fontColor">
+          <option value="black">Black</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="purple">Purple</option>
+        </select>
+
+        <label for="fontFamily">Font Family:</label>
+        <select id="fontFamily">
+          <option value="Arial">Arial</option>
+          <option value="Verdana">Verdana</option>
+          <option value="Times New Roman">Times New Roman</option>
+          <option value="Courier New">Courier New</option>
+          <option value="Georgia">Georgia</option>
+        </select>
+      </div>
+      <div>
+        <h4>TEXT PASSAGE</h4>
+        <p id="text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus ab
+          ea debitis optio. Magnam molestias laborum fugit, odit architecto iure
+          placeat consequatur nisi fuga quis alias sunt provident fugiat quasi
+          magni delectus quos ad voluptatem dolorem. Amet minus, autem magnam
+          eaque expedita quo repellat, delectus deserunt consequatur
+          exercitationem quos perferendis.
+        </p>
+      </div>
+
+      <div>
+        <button id="clicker">Click Me</button>
+        <p id="counter"></p>
+      </div>
+
+      <div>
+        <label for="input">Enter Your Password</label>
+        <input type="password" id="input" placeholder="******" />
+      </div>
+      <div>
+        <label for="check">Show/Hide Password</label>
+        <input type="checkbox" id="check" />
+      </div>
+
+      <div>
+        <form action="submit" id="textarea">
+          <label for="inputText">Enter Your Text</label>
+          <textarea name="practice" id="inputText"></textarea>
+          <p id="charCount"></p>
+          <input type="submit" value="submit" id="submitButton" />
+        </form>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
