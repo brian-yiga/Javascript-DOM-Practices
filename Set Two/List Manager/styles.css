@@ -1,0 +1,210 @@
+:root {
+    --lightBlue: #6399f7;
+    --blue: #033791;
+    --yellow: #f8fc05;
+    --orange: #fcae05;
+    --white: #faf9f7;
+    --grey: #d2d2d2bf;
+    --grey-light: rgb(168, 168, 168);
+    --green: rgb(77, 152, 77);
+    --primary-font: 'Roboto', sans-serif; 
+    --gradient: linear-gradient (
+        180deg,
+        rgba(45, 112, 1253, 0.73) 0%,
+        #163e92 100%
+    );
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--blue);
+    height: 100vh;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn {
+    padding: 0.7rem 1.5rem;
+    color: white    ;
+    background-color: rgb(52, 52, 247);
+    border-radius: 0.3rem;
+    border: none;
+    font-size: 1.1rem;
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
+}
+
+.todo {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3rem ;
+    width: 50%;
+    height: 60%;
+    max-width: 35rem;
+    border-radius: 2rem;
+    box-shadow: 0 1rem 3rem 1rem rgba(0, 23, 71, 0.15);
+}
+
+.title {
+    font-size: 2rem;
+    color: var(--blue);
+    font-family: var(--primary-font);
+    text-align: center;
+}
+
+
+
+.input {
+    position: relative;
+    display: flex;
+}
+
+.input-field {
+    width: 100%;
+    border: 0.06rem solid #d2d2d2bf;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    font-size: 1rem ;
+}
+
+input[type="text"]::placeholder {
+    color: rgb(203, 201, 201);
+}
+
+.todo-container {
+    display: flex;
+    gap: 1rem;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.3rem;
+}
+
+#todoList p {
+    display: flex;
+    gap: 1rem;
+    color: var(--blue);
+    align-items: center;
+}
+
+#todoList .disabled {
+    color: #8f98a8;
+}
+
+.disabled {
+    display: flex;
+    text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+} 
+
+input[type="checkbox"]::before {
+    content: "\2713";
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.7rem;
+    text-align: center;
+    border: 0.06rem solid var(--grey);
+    border-radius: 50%;
+    color: transparent;
+}
+
+input[type="checkbox"]:checked::before {
+    color: var(--white);
+    background-color: var(--green);
+    border: 0.06rem, solid var(--green);
+    border-radius: 50%;
+}
+
+
+.counter {
+    border: 0.06rem solid var(--grey);
+}
+
+.counter-container {
+    height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    color: var(--grey-light);
+}
+
+.counter-container p {
+    align-self: center;
+}
+
+.counter-container button {
+    border: none;
+    background-color: transparent;
+    color: var(--grey-light);
+    font-size: 1rem;
+}
+
+footer {
+    display: flex;
+    gap: 1rem;
+    background-color: var(--white);
+    padding: 0.5rem 0.8rem;
+    border-radius: 0.5rem;
+    color: var(--blue);
+}
+
+.design, .author {
+    font-size: 0.8rem;
+}
+
+.design {
+    color: grey;
+    font-style: italic;
+}
+
+.author {
+    color: #00399c;
+    font-weight: bold;
+}
+
+.scroll {
+    height: 15rem;
+    scrollbar-width: thin;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 0.6rem;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+    border-radius: 0.5rem;
+}
+
+.scroll::-webkit-scrollbar-track {
+    display: none;
+}
+
+#deleteButton {
+    cursor: pointer;
+}
+
+
